@@ -1,0 +1,17 @@
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.exe
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.deps.json
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.runtimeconfig.json
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.runtimeconfig.dev.json
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.dll
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\bin\Debug\netcoreapp3.0\18.11.2019.pdb
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.csprojAssemblyReference.cache
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\App.g.cs
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019_MarkupCompile.cache
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019_MarkupCompile.lref
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\MainWindow.baml
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.g.resources
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.AssemblyInfoInputs.cache
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.AssemblyInfo.cs
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.dll
+E:\~C#~WPF\ClassWork\18.11.2019\18.11.2019\obj\Debug\netcoreapp3.0\18.11.2019.pdb

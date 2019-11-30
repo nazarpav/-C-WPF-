@@ -1,0 +1,102 @@
+﻿<Window x:Class="_29._11._2019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_29._11._2019"
+        mc:Ignorable="d"
+        Title="3301" Height="450" Width="800" Background="#FFF30000">
+    
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="25" Background="#FFA6A6A6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Home" Height="25" Background="#FF3EFF4F" FontSize="16" FontFamily="Arial Black" Grid.Column="0"/>
+            <Button Content="About" Height="25" Background="#FF3EFF4F" FontSize="16" FontFamily="Arial Black" Grid.Column="1"/>
+            <Button Content="Content" Height="25" Background="#FF3EFF4F" FontSize="16" FontFamily="Arial Black" Grid.Column="2" />
+
+            <Button Content="Login" Height="25" Background="#FF3EFF4F" FontSize="16" FontFamily="Arial Black" Grid.Column="4" />
+            <Button Content="Register" Background="#FF3EFF4F" FontSize="16" FontFamily="Arial Black" Height="25" Grid.Column="5"/>
+        </Grid>
+        <Label Content="Rivne Times" Height="35" Background="#FF3E4A4F" FontSize="24" FontFamily="Arial Black" HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Stretch" DockPanel.Dock="Top" />
+        <Grid DockPanel.Dock="Bottom" Height="25" Background="#FFC3DA59" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Tel: 88007553555" Height="25" Background="#FFAEB4AE" FontSize="16" FontFamily="Arial Black" Grid.Column="1" />
+            <Button Content="Pischana 9" Background="#FF9AA09A" FontSize="16" FontFamily="Arial Black" Height="25" Grid.Column="2"/>
+        </Grid>
+        <Grid Background="#FFD0AFE2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" HorizontalAlignment="Left" Background="#FF7EA8AC">
+                <TextBlock Text="New 1" FontSize="22" FontFamily="Arial Black"  Height="25"/>
+                <TextBlock Text="New 2" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 3" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 4" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 5" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 6" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 7" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 8" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 8" FontSize="22" FontFamily="Arial Black" Height="25" />
+                <TextBlock Text="New 10" FontSize="22" FontFamily="Arial Black"/>
+                <TextBlock Text="New 11" FontSize="22" FontFamily="Arial Black"/>
+            </StackPanel>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Background="#FF7EA8AC" Grid.Row="1" >
+                    <TextBlock Text="Hot New 1" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 2" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 3" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 4" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 5" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 6" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 7" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 8" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 8" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 10" FontSize="22" FontFamily="Arial Black"/>
+                    <TextBlock Text="Hot New 11" FontSize="22" FontFamily="Arial Black"/>
+                </StackPanel>
+                <Label Content="Hot News" VerticalAlignment="Top" Background="Red" FontSize="22" FontFamily="Arial Black"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FF8B8B8B"/>
+                <Label Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FF8B8BFF"/>
+                <Label Grid.Row="2" Grid.Column="0" Background="#FFBB4848"/>
+                <Label Grid.Row="2" Grid.Column="1" Background="#FF812B00"/>
+                <Label Grid.Row="2" Grid.Column="2" Background="#FF800BFF"/>
+                <Label Grid.Row="2" Grid.Column="3" Background="#F00B8BFF"/>
+                <Label Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Background="#FF8B8B8B"/>
+                <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Background="#FF8B8BFF"/>
+            </Grid>
+
+        </Grid>
+    </DockPanel>
+
+</Window>
