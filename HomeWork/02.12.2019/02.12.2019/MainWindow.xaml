@@ -1,0 +1,81 @@
+﻿<Window x:Class="_02._12._2019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02._12._2019"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="260.266" Width="774.648">
+    <Grid Background="#FF767676">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Name :" Background="#FF8280BF"  Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Foreground="Black"/>
+            <TextBox TextWrapping="NoWrap" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Background="#FFE0BD5F" BorderBrush="#FF003DF5" CaretBrush="#FF11FFF4" Foreground="#FF0E0101"/>
+            <Label Content="Surname :" Background="#FF8280BF"  Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Foreground="Black"/>
+            <TextBox TextWrapping="NoWrap" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Background="#FFE0BD5F" BorderBrush="#FF003DF5" CaretBrush="#FF11FFF4" Foreground="#FF0E0101"/>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Arrival address :" Background="#FF8280BF"  Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Foreground="Black"/>
+            <TextBox TextWrapping="NoWrap" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Background="#FFE0BD5F" BorderBrush="#FF003DF5" CaretBrush="#FF11FFF4" Foreground="#FF0E0101"/>
+        </Grid>
+        <Grid Grid.Row="2" Background="#FF767676" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Quantity passenger :" Background="#FF8280BF"  Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Foreground="Black"/>
+            <Label Content="0" Name="QuantityPassenger" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontFamily="Moire ExtraBold" Background="#FFE0BD5F" BorderBrush="#FF003DF5" Foreground="#FF0E0101"/>
+            <RepeatButton Content="V" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFC72626" FontFamily="Gilroy ExtraBold" FontSize="24" Click="RepeatButton_Click"/>
+            <RepeatButton Content="V" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF45B44A" FontFamily="Gilroy ExtraBold" FontSize="24" RenderTransformOrigin="0.5,0.5" Click="RepeatButton_Click_1">
+                <RepeatButton.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </RepeatButton.RenderTransform>
+            </RepeatButton>
+        </Grid>
+        <Grid Grid.Row="3" Background="#FF767676" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <RadioButton Grid.Column="0" VerticalAlignment="Center" Content="Economy" FontFamily="Gilroy ExtraBold" FontSize="20" IsChecked="True"/>
+            <RadioButton Grid.Column="1" VerticalAlignment="Center" Content="Standard" FontFamily="Gilroy ExtraBold" FontSize="20"/>
+            <RadioButton Grid.Column="2" VerticalAlignment="Center" Content="Comfort" FontFamily="Gilroy ExtraBold" FontSize="20"/>
+            <CheckBox Name="CheckBox" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Gilroy ExtraBold" FontSize="20" Click="CheckBox_Click">
+                <Hyperlink NavigateUri="https://github.com/nazarpav" RequestNavigate="Hyperlink_RequestNavigate" Foreground="#FF112C47">
+                    Terms of service/use
+                </Hyperlink>
+            </CheckBox>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Cancel" Background="#FFBBB422" Click="Button_Click"/>
+            <Button Name="ButtonGo" Grid.Column="1" Content="GO" Background="#FF54D440" Click="Button_Click_1" IsEnabled="False"/>
+        </Grid>
+    </Grid>
+</Window>
