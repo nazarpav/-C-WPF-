@@ -1,0 +1,14 @@
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\bin\Debug\08.12.2019.exe.config
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\bin\Debug\08.12.2019.exe
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\bin\Debug\08.12.2019.pdb
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019.csprojAssemblyReference.cache
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\MainWindow.g.cs
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\App.g.cs
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019_MarkupCompile.cache
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019_MarkupCompile.lref
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\MainWindow.baml
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019.g.resources
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\_08._12._2019.Properties.Resources.resources
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019.csproj.GenerateResource.cache
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019.exe
+E:\~C#~WPF\HomeWork\08.12.2019\08.12.2019\obj\Debug\08.12.2019.pdb

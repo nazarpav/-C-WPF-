@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_08._12._2019"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="970.221" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">
+        Title="MainWindow" Height="502.515" Width="1008.249" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
@@ -41,7 +41,7 @@
                 <ColumnDefinition Width="185*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Content="Thurday, February 22,2007" HorizontalAlignment="Right" FontSize="11" Background="Black" Foreground="White"/>
-            <Button Grid.Column="1" Content="^" Width="Auto" FontFamily="Arial Black" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Foreground="White" Background="Black">
+            <Button Grid.Column="1" Content="^" Width="Auto" FontFamily="Arial Black" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Foreground="White" Background="Black" FontWeight="Bold" FontSize="14">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <RotateTransform Angle="180"/>
@@ -49,5 +49,117 @@
                 </Button.RenderTransform>
             </Button>
         </Grid>
+
+        <FlowDocumentReader Grid.Row="3">
+            <FlowDocument 
+    ColumnGap="10.0" 
+    ColumnRuleBrush="Black" 
+    ColumnRuleWidth="3.0" 
+    ColumnWidth="200"
+>
+                <Paragraph  Background="White" TextAlignment="Center">
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>massa, vel feugiat elit vestibulum in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dict
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>umst. Ut tristique nec nulla ut viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis massa, vel feugiat elit vestibulu
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>m in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dictumst. Ut tristique nec nulla ut
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricies tincidunt. Etiam condimentum odio quis posuere convallis. Donec egestas, massa vitae mattis eleifend, lacus dolor cursus purus, luctus posuere urna mauris ut lorem. Aliquam s
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>odales eros ac tortor viverra mattis. Maecenas et ante non metus ullamcorper laoreet. Vestibulum nec ipsum ut arcu hendrerit cursus. Phasellus faucibus lacinia enim eget cursus. Praesent mattis eros
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> non lectus scelerisque, vel imperdiet nibh consequat. Nullam vulputate efficitur egestas.
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> massa, vel feugiat elit vestibulum in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dict
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> umst. Ut tristique nec nulla ut viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis massa, vel feugiat elit vestibulu
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> m in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dictumst. Ut tristique nec nulla ut
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricies tincidunt. Etiam condimentum odio quis posuere convallis. Donec egestas, massa vitae mattis eleifend, lacus dolor cursus purus, luctus posuere urna mauris ut lorem. Aliquam s
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> odales eros ac tortor viverra mattis. Maecenas et ante non metus ullamcorper laoreet. Vestibulum nec ipsum ut arcu hendrerit cursus. Phasellus faucibus lacinia enim eget cursus. Praesent mattis eros
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> non lectus scelerisque, vel imperdiet nibh consequat. Nullam vulputate efficitur egestas.
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> massa, vel feugiat elit vestibulum in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dict
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> umst. Ut tristique nec nulla ut viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricorper nec enim sed sagittis. Phasellus id laoreet diam. Quisque laoreet nibh diam, ornare ultricies ligula consectetur eget. Nullam commodo mattis massa, vel feugiat elit vestibulu
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> m in. Phasellus libero ante, vestibulum non dui vel, vehicula facilisis augue. Nam quis volutpat neque. Sed luctus arcu in venenatis ullamcorper. In hac habitasse platea dictumst. Ut tristique nec nulla ut
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> viverra. Vivamus quis augue nec sapien vehicula tempus. Praesent ac lobortis erat. Vivamus eu diam vel est vulputate auctor. Nulla eu varius nunc, non rutrum risus.
+
+Sed sodales arcu urna, eget tempor nisl ultricies tincidunt. Etiam condimentum odio quis posuere convallis. Donec egestas, massa vitae mattis eleifend, lacus dolor cursus purus, luctus posuere urna mauris ut lorem. Aliquam s
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> odales eros ac tortor viverra mattis. Maecenas et ante non metus ullamcorper laoreet. Vestibulum nec ipsum ut arcu hendrerit cursus. Phasellus faucibus lacinia enim eget cursus. Praesent mattis eros
+                    <Floater HorizontalAlignment="Center">
+                        <Paragraph  FontSize="25" >Lorem 123 Ipsum</Paragraph>
+                        <Paragraph  FontSize="8" >Lorem Ipsum</Paragraph>
+                    </Floater> non lectus scelerisque, vel imperdiet nibh consequat. Nullam vulputate efficitur egestas.
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+
     </Grid>
 </Window>
