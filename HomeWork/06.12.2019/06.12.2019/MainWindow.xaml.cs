@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -12,11 +13,14 @@ namespace WpfTutorialSamples.Audio_and_Video
     {
         private bool mediaPlayerIsPlaying = false;
         private bool userIsDraggingSlider = false;
+        private bool fullscreen = false;
+        private DispatcherTimer DoubleClickTimer = new DispatcherTimer();
 
         public AudioVideoPlayerCompleteSample()
         {
             InitializeComponent();
-
+            DoubleClickTimer.Interval = TimeSpan.FromMilliseconds(GetDoubleClickTime());
+            DoubleClickTimer.Tick += (s, e) => DoubleClickTimer.Stop();
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
@@ -43,6 +47,8 @@ namespace WpfTutorialSamples.Audio_and_Video
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
                 mePlayer.Source = new Uri(openFileDialog.FileName);
+            mePlayer.Play();
+            mediaPlayerIsPlaying = true;
         }
 
         private void Play_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -105,5 +111,30 @@ namespace WpfTutorialSamples.Audio_and_Video
         {
             mePlayer.Volume = ((Slider)sender).Value;
         }
+        private void MediaPlayer_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (!DoubleClickTimer.IsEnabled)
+            {
+                DoubleClickTimer.Start();
+            }
+            else
+            {
+                if (!fullscreen)
+                {
+                    this.WindowStyle = WindowStyle.None;
+                    this.WindowState = WindowState.Maximized;
+                }
+                else
+                {
+                    this.WindowStyle = WindowStyle.SingleBorderWindow;
+                    this.WindowState = WindowState.Normal;
+                }
+
+                fullscreen = !fullscreen;
+            }
+        }
+
+        [DllImport("user32.dll")]
+        private static extern uint GetDoubleClickTime();
     }
 }

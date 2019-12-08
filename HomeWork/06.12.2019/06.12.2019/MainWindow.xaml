@@ -32,7 +32,7 @@
             <Slider Grid.Column="0" ValueChanged="Slider_ValueChanged" Maximum="1" Orientation="Vertical"/>
 
         </Grid>
-        <MediaElement Stretch="Fill" Name="mePlayer" Grid.Row="0" LoadedBehavior="Manual" OpacityMask="Black" Grid.RowSpan="2"/>
+        <MediaElement MouseDown="MediaPlayer_MouseLeftButtonUp" Stretch="Fill" Name="mePlayer" Grid.Row="0" LoadedBehavior="Manual" OpacityMask="Black" Grid.RowSpan="2"/>
 
         <StatusBar Grid.Row="1">
             <StatusBar.ItemsPanel>

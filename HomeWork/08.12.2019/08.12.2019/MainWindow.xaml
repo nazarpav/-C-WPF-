@@ -1,0 +1,53 @@
+﻿<Window x:Class="_08._12._2019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_08._12._2019"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="970.221" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Scattle Post Intelligencer" FontFamily="Jing Jing" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Top News" Background="#FFFF7A7A" FontSize="14" FontFamily="Arial Black" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="1" Content="Local" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="2" Content="Nation/World" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="3" Content="Business/Tech" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="4" Content="Sports" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="5" Content="Life And Arts" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="6" Content="Opinion" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+            <Button Grid.Column="7" Content="Most Read" Background="#FFFF7A7A" FontFamily="Arial Black" FontSize="14" Foreground="#FFDEDEDE"/>
+        </Grid>
+        <Label Grid.Row="2" Background="Black"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="211*"/>
+                <ColumnDefinition Width="185*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Thurday, February 22,2007" HorizontalAlignment="Right" FontSize="11" Background="Black" Foreground="White"/>
+            <Button Grid.Column="1" Content="^" Width="Auto" FontFamily="Arial Black" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Foreground="White" Background="Black">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
