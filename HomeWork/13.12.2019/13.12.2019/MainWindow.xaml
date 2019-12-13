@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_13._12._2019"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="761.702">
+        Title="MainWindow" Height="450" Width="778.165">
     <Grid Background="#FFB5BFAF">
         <Grid.RowDefinitions>
             <RowDefinition Height="18*"/>
@@ -13,7 +13,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="1" Content="ADD" FontFamily="FARRAY" FontSize="24" Background="#FF8CC9CF" Click="Button_Click"/>
+        <Button Grid.Row="1" Content="ADD" FontFamily="FARRAY" FontSize="24" Name="ButtonAdd" Background="#FF8CC9CF" Click="Button_Click"/>
 
         <Separator Grid.Row="2" Background="Black" FontSize="36"/>
         <Grid>

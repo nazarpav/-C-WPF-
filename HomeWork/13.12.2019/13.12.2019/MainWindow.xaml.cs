@@ -24,9 +24,21 @@ namespace _13._12._2019
 
         private void Sliders_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
+            ButtonAdd.IsEnabled = true;
             ColorView.Background = new SolidColorBrush(Color.FromArgb(byte.Parse(AlphaC.Content.ToString()), byte.Parse(RedC.Content.ToString()), byte.Parse(GreenC.Content.ToString()), byte.Parse(BlueC.Content.ToString())));
+            CheckAddButton();
         }
-
+        private void CheckAddButton()
+        {
+            foreach (var i in ListBox_.Items)
+            {
+                if (((Label)((StackPanel)i).Children[0]).Content.ToString() == ColorView.Background.ToString())
+                {
+                    ButtonAdd.IsEnabled = false;
+                    break;
+                }
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ListBox_.Items.Add(new StackPanel());
@@ -55,16 +67,25 @@ namespace _13._12._2019
             button.FontFamily = new FontFamily("Arial Black");
             button.FontSize = 24;
             button.Click += ButtonDelete_Click;
-            string n = "_";
-               n += (ListBox_.Items.Count - 1).ToString();
-            button.Name = n;
             ((StackPanel)ListBox_.Items[ListBox_.Items.Count - 1]).Children.Add(button);
-
+            UpdateButton();
+            CheckAddButton();
+        }
+        private void UpdateButton()
+        {
+            int counter = 0;
+            string n = String.Empty;
+            foreach (var i in ListBox_.Items)
+            {
+                n = "_";
+                n += counter++.ToString();
+                ((Button)((StackPanel)i).Children[2]).Name = n;
+            }
         }
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            string n = (string)((Button)sender).Name.Skip(1);
-            ListBox_.Items.Remove(ListBox_.Items[int.Parse(n)]);
+            ListBox_.Items.Remove(ListBox_.Items[int.Parse(((Button)sender).Name.Remove(0, 1))]);
+            UpdateButton();
         }
     }
 }
