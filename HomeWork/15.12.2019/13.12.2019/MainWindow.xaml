@@ -1,0 +1,195 @@
+﻿<Window x:Class="_13._12._2019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_13._12._2019"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="778.165">
+    <Window.Resources>
+        <ControlTemplate x:Key="mailTextBoxTemplate" TargetType="{x:Type Label}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Background="{TemplateBinding BorderBrush}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="3,0,0,3"
+                        Grid.Column="0">
+                    <Image Height="24" Margin="5" RenderOptions.BitmapScalingMode="HighQuality" Source="/Icons/Mail.png"/>
+                </Border>
+                <Border BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="0,3,3,0"
+                        Grid.Column="1">
+                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,0" VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+
+        <Style x:Key="mailTextBoxStyle" BasedOn="{StaticResource textBoxStyle}" TargetType="{x:Type Label}">
+            <Setter Property="Template" Value="{StaticResource mailTextBoxTemplate}"/>
+            <Setter Property="Template"> Value="{}" />
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FFB5BFAF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Content="ADD" FontFamily="FARRAY" FontSize="24" Name="ButtonAdd" Background="#FF8CC9CF" Click="Button_Click"/>
+
+        <Separator Grid.Row="2" Background="Black" FontSize="36"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="2" Background="Transparent" Name="ColorView" Margin="5,5,5,5" BorderThickness="2" BorderBrush="Black"/>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Content="Alpha: " HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+                    <Label Grid.Column="1" Name="AlphaC" Content="{Binding Value, ElementName=AlphaCSlider}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Grid.Column="0" Content="Red: " HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+                    <Label Grid.Column="1" Name="RedC" Content="{Binding Value, ElementName=RedCSlider}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+
+                </Grid>
+                <Grid Grid.Row="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Grid.Column="0" Content="Green: " HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+                    <Label Grid.Column="1" Name="GreenC" Content="{Binding Value, ElementName=GreenCSlider}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+
+                </Grid>
+                <Grid Grid.Row="3" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Grid.Column="0" Content="Blue: " HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+                    <Label Grid.Column="1" Name="BlueC" Content="{Binding Value, ElementName=BlueCSlider}" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="18" FontFamily="Arial Black"/>
+
+                </Grid>
+            </Grid>
+            <Grid  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Slider  Name="AlphaCSlider" Grid.Row="0" VerticalAlignment="Center" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="Sliders_ValueChanged" SmallChange="1"/>
+                <Slider Name="RedCSlider" Grid.Row="1" VerticalAlignment="Center" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="Sliders_ValueChanged" SmallChange="1"/>
+                <Slider Name="GreenCSlider" Grid.Row="2" VerticalAlignment="Center" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="Sliders_ValueChanged" SmallChange="1"/>
+                <Slider Name="BlueCSlider" Grid.Row="3" VerticalAlignment="Center" Maximum="255" TickFrequency="1" IsSnapToTickEnabled="True" ValueChanged="Sliders_ValueChanged" SmallChange="1"/>
+            </Grid>
+        </Grid>
+
+        <ListBox Name="ListBox_" Grid.Row="3" Background="Transparent"/>
+
+
+
+    </Grid>
+</Window>
+<!--<Window x:Class="Wpf.ControlTemplates.Controls.TextBox.MainWindow"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        SizeToContent="Height"
+        Title="Control Templates"
+        Width="350"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ControlTemplate x:Key="mailTextBoxTemplate" TargetType="{x:Type TextBox}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Background="{TemplateBinding BorderBrush}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="3,0,0,3"
+                        Grid.Column="0">
+                    <Image Height="24" Margin="5" RenderOptions.BitmapScalingMode="HighQuality" Source="/Icons/Mail.png"/>
+                </Border>
+                <Border BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="0,3,3,0"
+                        Grid.Column="1">
+                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,0" VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="phoneTextBoxTemplate" TargetType="{x:Type TextBox}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Background="{TemplateBinding BorderBrush}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="3,0,0,3"
+                        Grid.Column="0">
+                    <Image Height="24" Margin="5" RenderOptions.BitmapScalingMode="HighQuality" Source="/Icons/Phone.png"/>
+                </Border>
+                <Border BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="0,3,3,0"
+                        Grid.Column="1">
+                    <ScrollViewer x:Name="PART_ContentHost" Margin="5,0" VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <Style x:Key="textBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#FF1E90FF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="mailTextBoxStyle" BasedOn="{StaticResource textBoxStyle}" TargetType="{x:Type TextBox}">
+            <Setter Property="Template" Value="{StaticResource mailTextBoxTemplate}"/>
+        </Style>
+        <Style x:Key="phoneTextBoxStyle" BasedOn="{StaticResource textBoxStyle}" TargetType="{x:Type TextBox}">
+            <Setter Property="Template" Value="{StaticResource phoneTextBoxTemplate}"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="5"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" Style="{StaticResource mailTextBoxStyle}"/>
+        <TextBox Grid.Row="2" Style="{StaticResource phoneTextBoxStyle}"/>
+    </Grid>
+</Window>-->
