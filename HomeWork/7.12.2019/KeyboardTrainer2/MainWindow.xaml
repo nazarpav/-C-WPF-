@@ -1,0 +1,332 @@
+﻿<Window x:Class="KeyboardTrainer2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardTrainer2"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        KeyDown="Window_KeyDown"
+        KeyUp="Window_KeyUp"
+        MinHeight="500"
+        MinWidth="1100" Width="1100"
+        Height="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Border Name="MVBorder" Grid.RowSpan="6" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <ToolBarTray Grid.Row="0" Background="#FF58AC91" Height="28" Margin="0,0,0,35" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <ToolBar>
+                <Button Click="ButtonClickStart">Start</Button>
+                <Button Click="ButtonClickRestart">Restart</Button>
+                <Separator/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Level: " VerticalAlignment="Center"/>
+                    <ComboBox Width="Auto" >
+                        <ComboBoxItem Name="LEasy" IsSelected="True" >Easy</ComboBoxItem>
+                        <ComboBoxItem Name="LMedium" >Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LHard" >Hard</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <Button Name="Pause" Click="Pause_Click" Content="Pause"></Button>
+            </ToolBar>
+        </ToolBarTray>
+        <Label Grid.Row="1" Name="StringForComparison" Background="#FF868BC1" BorderThickness="3,3,3,3" BorderBrush="Black" FontFamily="Moire ExtraBold" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Grid.Row="1" Name="InputtedString" FontFamily="Moire ExtraBold" BorderThickness="3,3,3,3" FontSize="20" Foreground="White" Background="Transparent" Grid.ColumnSpan="2"/>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Border Name="_0_0B" Grid.Column="0" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_1B" Grid.Column="1" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_2B" Grid.Column="2" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_3B" Grid.Column="3" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label  Name="_0_3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_4B" Grid.Column="4" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_5B" Grid.Column="5" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_6B"  Grid.Column="6" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_7B" Grid.Column="7" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_8B" Grid.Column="8" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_9B" Grid.Column="9" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_10B" Grid.Column="10" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_11B" Grid.Column="11" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_11" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_12B" Grid.Column="12" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_0_12" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_0_13B" Grid.Column="13" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Backspace" Name="_0_13" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.8*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                </Grid.ColumnDefinitions>
+                <Border Name="_1_0B" Grid.Column="0" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Tab" Name="_1_0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_1B" Grid.Column="1" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_2B" Grid.Column="2" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_3B" Grid.Column="3" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_4B" Grid.Column="4" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_5B" Grid.Column="5" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_6B" Grid.Column="6" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_7B" Grid.Column="7" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_8B" Grid.Column="8" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_9B" Grid.Column="9" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_10B" Grid.Column="10" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_11B" Grid.Column="11" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_11" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_12B" Grid.Column="12" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_12" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_1_13B" Grid.Column="13" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_1_13" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Border Name="_2_0B" Grid.Column="0" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="CapsLock" Name="_2_0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_1B" Grid.Column="1" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_2B" Grid.Column="2" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_3B" Grid.Column="3" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_4B" Grid.Column="4" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_5B" Grid.Column="5" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_6B" Grid.Column="6" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_7B" Grid.Column="7" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_8B" Grid.Column="8" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_9B" Grid.Column="9" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_10B" Grid.Column="10" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_11B" Grid.Column="11" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_2_11" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_2_12B" Grid.Column="12" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Enter" Name="_2_12" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                </Grid.ColumnDefinitions>
+                <Border Name="_3_0B" Grid.Column="0" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Shift" Name="_3_0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_1B" Grid.Column="1" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_2B" Grid.Column="2" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_3B" Grid.Column="3" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_4B" Grid.Column="4" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_5B" Grid.Column="5" Background="#FF7792F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_6B" Grid.Column="6" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_7B" Grid.Column="7" Background="#FFCA49F0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_8B" Grid.Column="8" Background="#FFF07795" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_9B" Grid.Column="9" Background="#FFEBF092" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_10B" Grid.Column="10" Background="#FF8FF77F" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_3_10" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_3_11B" Grid.Column="11" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Shift" Name="_3_11" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                <Border Name="_4_0B" Grid.Column="0" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Ctrl" Name="_4_0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_1B" Grid.Column="1" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Win" Name="_4_1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_2B" Grid.Column="2" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Alt" Name="_4_2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_3B" Grid.Column="3" Background="#FFF3D342" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Name="_4_3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_4B" Grid.Column="4" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Alt" Name="_4_4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_5B" Grid.Column="5" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Win" Name="_4_5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+                <Border Name="_4_6B" Grid.Column="6" Background="#FFA1A6A0" BorderBrush="Black" BorderThickness="3" CornerRadius="10" Margin="3">
+                    <Label Content="Ctrl" Name="_4_6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Segoe UI Black"/>
+                </Border>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="7">
+            <StatusBar>
+                <Label Content="Time (Seconds): "/>
+                <Label Name="Time" Content="_"/>
+                <Label Content="Mistakes"/>
+                <Label Name="Mistakes" Content="_"/>
+                <Label Content="Characters entered per minutes"/>
+                <Label Name="CharPerMin" Content="_"/>
+                <Label Content="Compleated: "/>
+                <Label Name="Compleated" Content="_"/>
+            </StatusBar>
+        </Grid>
+        <Label Visibility="Hidden" Name="LabelInPause" MouseUp="LabelInPause_MouseEnter" Grid.Row="4" Grid.RowSpan="3" Content="Click to continue" Background="#FF7C7C7C" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72"/>
+    </Grid>
+</Window>

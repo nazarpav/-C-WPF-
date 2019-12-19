@@ -1,0 +1,43 @@
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe.config
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.pdb
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csprojAssemblyReference.cache
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\MainWindow.g.cs
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\App.g.cs
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.cache
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.lref
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\MainWindow.baml
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.g.resources
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.Properties.Resources.resources
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csproj.GenerateResource.cache
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.exe
+C:\Users\Vlad\Dropbox\Work\Step\3. Full-Time\8. FT - Windows Presentation Foundation\03. Controls\Задания\KeyboardTrainer\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.pdb
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe.config
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.pdb
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csprojAssemblyReference.cache
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\MainWindow.g.cs
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\App.g.cs
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.cache
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.lref
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\MainWindow.baml
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.g.resources
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.Properties.Resources.resources
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csproj.GenerateResource.cache
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.exe
+C:\Users\назар\Downloads\KeyboardTrainer2\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.pdb
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe.config
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.exe
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\bin\Debug\KeyboardTrainer2.pdb
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csprojAssemblyReference.cache
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\MainWindow.g.cs
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\App.g.cs
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.cache
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2_MarkupCompile.lref
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\MainWindow.baml
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.g.resources
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.Properties.Resources.resources
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.csproj.GenerateResource.cache
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.exe
+E:\~C#~WPF\HomeWork\7.12.2019\KeyboardTrainer2\obj\Debug\KeyboardTrainer2.pdb
