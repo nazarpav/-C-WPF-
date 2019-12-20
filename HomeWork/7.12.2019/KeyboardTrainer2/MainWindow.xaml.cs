@@ -97,7 +97,9 @@ namespace KeyboardTrainer2
             if(StringForComparison.Content?.ToString()== InputtedString.Content?.ToString())
             {
                 Compleated.Content = int.Parse(Compleated.Content.ToString()) + 1;
-                ReloadData();
+                StringForComparison.Content = GenerateText();
+                counter = 0;
+                InputtedString.Content = "";
             }
 
 
@@ -137,6 +139,10 @@ namespace KeyboardTrainer2
         }
         private void ButtonClickStart(object sender, RoutedEventArgs e)
         {
+            if (IsGame)
+            {
+                return;
+            }
             StringForComparison.Content = GenerateText();
             timer.Start();
             Compleated.Content = "0";
@@ -163,10 +169,15 @@ namespace KeyboardTrainer2
             {
                 return;
             }
+            InputtedString.Content = "";
             StringForComparison.Content = GenerateText();
         }
         private void Pause_Click(object sender, RoutedEventArgs e)
         {
+            if (!IsGame)
+            {
+                return;
+            }
             timer.Stop();
             LabelInPause.Visibility = Visibility.Visible;
             IsGame = false;
