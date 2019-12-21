@@ -1,0 +1,82 @@
+﻿<Window x:Class="WpfApp2.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF0F461E" Offset="0.605"/>
+            <GradientStop Color="#FFD3FFDF"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Name="listBoxContact" Grid.Column="0" Background="#FFA6A6A6">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock  Text="{Binding Surname}"></TextBlock>
+                        <TextBlock  Text="{Binding Phone}"></TextBlock>
+                        <Button Click="ButtonClickEdit" Content="Edit" Background="Gray" FontSize="14" FontFamily="Arial Black"/>
+                        <Button Content="X" Click="ButtonClickDelete"  Background="Gray" FontSize="14" FontFamily="Arial Black"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock Text="{Binding ElementName=listBoxContact, Path=SelectedItem.Name}"></TextBlock>
+                <TextBlock ></TextBlock>
+                <TextBlock>SURNAME</TextBlock>
+            </StackPanel>
+            <TextBlock>Phone</TextBlock>
+            <TextBlock>Email</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <Label Content="Name: " FontSize="18" FontFamily="Moire ExtraBold">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF3C2C02" Offset="0"/>
+                        <GradientStop Color="#FF089797" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox Height="30" BorderThickness="2" Name="nameTxtBox" Grid.Column="2" Background="#FF089797"></TextBox>
+            <Label Content="SurName: " FontSize="18" FontFamily="Moire ExtraBold">
+                <Label.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF2C4F1F" Offset="0"/>
+                        <GradientStop Color="#FF089797" Offset="1"/>
+                    </RadialGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox Height="30" BorderThickness="2" Name="surnameTxtBox" Grid.Column="2" Background="#FF089797"></TextBox>
+            <Label Content="PhoneName: " FontSize="18" FontFamily="Moire ExtraBold">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF089797" Offset="0"/>
+                        <GradientStop Color="#FF384922" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox BorderThickness="2" Height="30" Name="phoneTxtBox" Grid.Column="2">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF374B25" Offset="0"/>
+                        <GradientStop Color="#FF00441C" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Button Click="Button_Click" Background="#FF3F6A00" FontSize="16" FontFamily="Arial Black" Content="Add"/>
+        </StackPanel>
+    </Grid>
+</Window>
