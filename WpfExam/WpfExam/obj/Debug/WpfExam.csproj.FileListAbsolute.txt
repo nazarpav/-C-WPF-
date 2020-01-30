@@ -1,0 +1,14 @@
+C:\Users\назар\Desktop\WpfExam\WpfExam\bin\Debug\WpfExam.exe.config
+C:\Users\назар\Desktop\WpfExam\WpfExam\bin\Debug\WpfExam.exe
+C:\Users\назар\Desktop\WpfExam\WpfExam\bin\Debug\WpfExam.pdb
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.csprojAssemblyReference.cache
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\MainWindow.g.cs
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\App.g.cs
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam_MarkupCompile.cache
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam_MarkupCompile.lref
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\MainWindow.baml
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.g.resources
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.Properties.Resources.resources
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.csproj.GenerateResource.cache
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.exe
+C:\Users\назар\Desktop\WpfExam\WpfExam\obj\Debug\WpfExam.pdb

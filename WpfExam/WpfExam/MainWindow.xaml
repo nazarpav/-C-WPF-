@@ -1,0 +1,116 @@
+﻿<Window x:Class="WpfExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExam"
+        Closed="Window_Closed"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="544" Width="512"
+        MinHeight="640"
+        MinWidth="512"
+        KeyUp="Window_KeyUp" Background="#FFA69E50"
+        >
+    <Window.Resources>
+        <Style TargetType="Label" x:Key="Foreground">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontFamily" Value="Moire ExtraBold"/>
+            <Setter Property="Foreground" Value="#FF1D1602"/>
+        </Style>
+        <Style TargetType="Border" x:Key="Background">
+            <Setter Property="Background" Value="#FF78723C"/>
+            <Setter Property="BorderBrush" Value="DarkKhaki"/>
+            <Setter Property="BorderThickness" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Name="B00" Grid.Row="0" Grid.Column="0" Style="{ StaticResource Background}"/>
+        <Border Name="B01" Grid.Row="0" Grid.Column="1" Style="{ StaticResource Background}"/>
+        <Border Name="B02" Grid.Row="0" Grid.Column="2" Style="{ StaticResource Background}"/>
+        <Border Name="B03" Grid.Row="0" Grid.Column="3" Style="{ StaticResource Background}"/>
+        <Border Name="B10" Grid.Row="1" Grid.Column="0" Style="{ StaticResource Background}"/>
+        <Border Name="B11" Grid.Row="1" Grid.Column="1" Style="{ StaticResource Background}"/>
+        <Border Name="B12" Grid.Row="1" Grid.Column="2" Style="{ StaticResource Background}"/>
+        <Border Name="B13" Grid.Row="1" Grid.Column="3" Style="{ StaticResource Background}"/>
+        <Border Name="B20" Grid.Row="2" Grid.Column="0" Style="{ StaticResource Background}"/>
+        <Border Name="B21" Grid.Row="2" Grid.Column="1" Style="{ StaticResource Background}"/>
+        <Border Name="B22" Grid.Row="2" Grid.Column="2" Style="{ StaticResource Background}"/>
+        <Border Name="B23" Grid.Row="2" Grid.Column="3" Style="{ StaticResource Background}"/>
+        <Border Name="B30" Grid.Row="3" Grid.Column="0" Style="{ StaticResource Background}"/>
+        <Border Name="B31" Grid.Row="3" Grid.Column="1" Style="{ StaticResource Background}"/>
+        <Border Name="B32" Grid.Row="3" Grid.Column="2" Style="{ StaticResource Background}"/>
+        <Border Name="B33" Grid.Row="3" Grid.Column="3" Style="{ StaticResource Background}"/>
+
+        <Label Name="_00" Grid.Row="0" Grid.Column="0" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_10" Grid.Row="1" Grid.Column="0" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_11" Grid.Row="1" Grid.Column="1" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_01" Grid.Row="0" Grid.Column="1" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_20" Grid.Row="2" Grid.Column="0" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_21" Grid.Row="2" Grid.Column="1" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_22" Grid.Row="2" Grid.Column="2" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_12" Grid.Row="1" Grid.Column="2" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_02" Grid.Row="0" Grid.Column="2" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_03" Grid.Row="0" Grid.Column="3" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_13" Grid.Row="1" Grid.Column="3" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_23" Grid.Row="2" Grid.Column="3" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_33" Grid.Row="3" Grid.Column="3" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_30" Grid.Row="3" Grid.Column="0" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_31" Grid.Row="3" Grid.Column="1" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="_32" Grid.Row="3" Grid.Column="2" Style="{StaticResource Foreground}">
+        </Label>
+        <Label Name="GameOver" Visibility="Hidden" MouseUp="GameOver_MouseUp"  Content="Game  Over&#xD;       Click &#xD; to Restart" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="5" FontSize="78" FontFamily="Moire ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FFFFE6C1" Background="#FF6E6937"/>
+        <Grid Grid.Row="4" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Score: " HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="0"/>
+            <Label Grid.Column="1" Content="0" Name="Score" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="0"/>
+            <Label Grid.Column="2" Content="Max:" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="0"/>
+            <Label Grid.Column="3" Content="0" Name="MaxScore" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="0"/>
+
+            <Label Grid.Column="0" Content="QOp: " HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="1"/>
+            <Label Grid.Column="1" Content="0" Name="QOP" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="1"/>
+            <Label Grid.Column="2" Content="Max:" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="1"/>
+            <Label Grid.Column="3" Content="0" Name="Undef" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Grid.Row="1"/>
+        </Grid>
+    </Grid>
+</Window>
